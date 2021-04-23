@@ -55,7 +55,7 @@ if(!isset($p)) {
     </div>
 
     <div class="footer">
-        Copyright Jeffrey &copy; <?=date("Y")?>
+        Copyright Rafael &copy; <?=date("Y")?>
     </div>
 
 </body>
