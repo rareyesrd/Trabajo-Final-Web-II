@@ -1,0 +1,88 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.header {
+    background: #111;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu {
+    padding: 10px;
+    background: #111;
+
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 20px;
+    color: #fff;
+    background: #111;
+}
+
+.menu a:hover {
+    background: #111;
+}
+
+.cuerpo {
+    background: #eaeaea;
+    padding: 30px;
+    min-height: 500px;
+}
+
+.footer {
+    background: #000;
+    color: #aaa;
+    text-align: center;
+    font-size: 15px;
+    padding: 50px;
+}
+
+.centrar_login {
+    width: 40%;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.producto {
+    display: inline-block;
+    width: 25%;
+    padding: 10px;
+    background: rgba(0,0,0,0.05);
+    color: #333;
+    margin: 5px;
+}
+
+.img_producto {
+    width: 150px;
+    height: 150px;
+}
+
+.name_producto {
+    padding: 10px;
+    color:#fff;
+    background: #ff8800;
+    text-align: center;
+    font-size: 18px ;
+    font-weight: bold;
+}
+
+.precio {
+    color: #00aa00;
+}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.9.0.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Jun 28, 2019 at 09:59 PM
+- Server version: 10.3.16-MariaDB
+- PHP Version: 7.3.6
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="tienda" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="admins">
+                CREATE TABLE `admins` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `username` varchar(255) NOT NULL,
+                  `passwd` varchar(255) NOT NULL,
+                  `name` varchar(255) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="carro">
+                CREATE TABLE `carro` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `id_cliente` int(11) NOT NULL,
+                  `id_producto` int(11) NOT NULL,
+                  `cantidad` int(11) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="clientes">
+                CREATE TABLE `clientes` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `username` varchar(255) NOT NULL,
+                  `passwd` varchar(255) NOT NULL,
+                  `name` varchar(255) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="productos">
+                CREATE TABLE `productos` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(255) NOT NULL,
+                  `price` float NOT NULL,
+                  `imagen` varchar(255) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'tienda'
+    -->
+    <database name="tienda">
+        <!-- Table admins -->
+        <table name="admins">
+            <column name="id">1</column>
+            <column name="username">jmesa</column>
+            <column name="passwd">1234</column>
+            <column name="name">Jeffrey Mesa</column>
+        </table>
+        <!-- Table carro -->
+        <table name="carro">
+            <column name="id">1</column>
+            <column name="id_cliente">1</column>
+            <column name="id_producto">4</column>
+            <column name="cantidad">5</column>
+        </table>
+        <!-- Table clientes -->
+        <table name="clientes">
+            <column name="id">1</column>
+            <column name="username">cmachente</column>
+            <column name="passwd">1234</column>
+            <column name="name">Carlos Machente</column>
+        </table>
+        <!-- Table productos -->
+        <table name="productos">
+            <column name="id">1</column>
+            <column name="name">Corrupcion</column>
+            <column name="price">1.99</column>
+            <column name="imagen">IMG_71916.png</column>
+        </table>
+        <table name="productos">
+            <column name="id">2</column>
+            <column name="name">No lo se</column>
+            <column name="price">1.99</column>
+            <column name="imagen">IMG_2989.png</column>
+        </table>
+        <table name="productos">
+            <column name="id">4</column>
+            <column name="name">Code</column>
+            <column name="price">9.99</column>
+            <column name="imagen">IMG_80628.png</column>
+        </table>
+        <table name="productos">
+            <column name="id">5</column>
+            <column name="name">Code Preview</column>
+            <column name="price">9.99</column>
+            <column name="imagen">IMG_7526.png</column>
+        </table>
+        <table name="productos">
+            <column name="id">7</column>
+            <column name="name">Saitama</column>
+            <column name="price">1.99</column>
+            <column name="imagen">IMG_18502.png</column>
+        </table>
+        <table name="productos">
+            <column name="id">9</column>
+            <column name="name">iPhone XI</column>
+            <column name="price">999</column>
+            <column name="imagen">IMG_54816.png</column>
+        </table>
+    </database>
+</pma_xml_export>
