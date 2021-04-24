@@ -23,6 +23,20 @@
                   PRIMARY KEY (`id`)
                 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
             </pma:table>
+            <pma:table name="contactos">
+                CREATE TABLE `contactos` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `nombre` varchar(255) NOT NULL,
+                  `apellido` varchar(255) NOT NULL,
+                  `cedula` int(11) NOT NULL,
+                  `company` varchar(255) NOT NULL,
+                  `position` varchar(255) NOT NULL,
+                  `email` varchar(255) NOT NULL,
+                  `phone` int(10) NOT NULL,
+                  `NOTAS` varchar(255) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+            </pma:table>
             <pma:table name="clientes">
                 CREATE TABLE `clientes` (
                   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -48,63 +62,42 @@
     - Database: 'tienda'
     -->
     <database name="tienda">
-        <!-- Table admins -->
-        <table name="admins">
-            <column name="id">1</column>
-            <column name="username">rreyes</column>
-            <column name="passwd">1234</column>
-            <column name="name">Rafael Reyes</column>
-        </table>
-        <!-- Table carro -->
-        <table name="carro">
-            <column name="id">1</column>
-            <column name="id_cliente">1</column>
-            <column name="id_producto">4</column>
-            <column name="cantidad">5</column>
-        </table>
-        <!-- Table clientes -->
-        <table name="clientes">
-            <column name="id">1</column>
-            <column name="username">lvargas</column>
-            <column name="passwd">1234</column>
-            <column name="name">Luis Vargas</column>
-        </table>
         <!-- Table productos -->
-        <table name="productos">
-            <column name="id">1</column>
-            <column name="name">Corrupcion</column>
-            <column name="price">1.99</column>
-            <column name="imagen">IMG_71916.png</column>
-        </table>
-        <table name="productos">
-            <column name="id">2</column>
-            <column name="name">No lo se</column>
-            <column name="price">1.99</column>
-            <column name="imagen">IMG_2989.png</column>
-        </table>
-        <table name="productos">
-            <column name="id">4</column>
-            <column name="name">Code</column>
-            <column name="price">9.99</column>
-            <column name="imagen">IMG_80628.png</column>
-        </table>
-        <table name="productos">
-            <column name="id">5</column>
-            <column name="name">Code Preview</column>
-            <column name="price">9.99</column>
-            <column name="imagen">IMG_7526.png</column>
-        </table>
-        <table name="productos">
-            <column name="id">7</column>
-            <column name="name">Saitama</column>
-            <column name="price">1.99</column>
-            <column name="imagen">IMG_18502.png</column>
-        </table>
         <table name="productos">
             <column name="id">9</column>
             <column name="name">iPhone XI</column>
             <column name="price">999</column>
             <column name="imagen">IMG_54816.png</column>
+        </table>
+        <table name="productos">
+            <column name="id">10</column>
+            <column name="name">Webpage</column>
+            <column name="price">150</column>
+            <column name="imagen">IMG_30654.png</column>
+        </table>
+        <table name="productos">
+            <column name="id">11</column>
+            <column name="name">Wendys</column>
+            <column name="price">16</column>
+            <column name="imagen">IMG_53236.png</column>
+        </table>
+        <table name="productos">
+            <column name="id">12</column>
+            <column name="name">Tenis Nike</column>
+            <column name="price">200</column>
+            <column name="imagen">IMG_61443.png</column>
+        </table>
+        <table name="productos">
+            <column name="id">13</column>
+            <column name="name">Cafe</column>
+            <column name="price">3</column>
+            <column name="imagen">IMG_7224.png</column>
+        </table>
+        <table name="productos">
+            <column name="id">14</column>
+            <column name="name">Manzana</column>
+            <column name="price">4</column>
+            <column name="imagen">IMG_83077.png</column>
         </table>
     </database>
 </pma_xml_export>

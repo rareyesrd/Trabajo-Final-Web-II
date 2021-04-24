@@ -5,6 +5,8 @@
 .body {
     padding: 0;
     margin: 0;
+    background: #eaeaea;
+    overflow: hidden;
 }
 
 a {
@@ -25,7 +27,7 @@ a {
 .menu {
     padding: 10px;
     background: #111;
-
+    text-align: center;
 }
 
 .menu a {
@@ -41,12 +43,15 @@ a {
 }
 
 .cuerpo {
-    background: #eaeaea;
     padding: 30px;
     min-height: 500px;
 }
 
 .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background: #000;
     color: #aaa;
     text-align: center;
@@ -64,25 +69,29 @@ a {
     display: inline-block;
     width: 25%;
     padding: 10px;
-    background: rgba(0,0,0,0.05);
+    background: rgba(0, 0, 0, 0.05);
     color: #333;
     margin: 5px;
 }
 
 .img_producto {
-    width: 150px;
+    width: 100%;
+    max-width: 200px;
     height: 150px;
+    display: block;
+    margin: 10px auto;
 }
 
 .name_producto {
     padding: 10px;
-    color:#fff;
+    color: #fff;
     background: #ff8800;
     text-align: center;
-    font-size: 18px ;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .precio {
     color: #00aa00;
+    text-align: center;
 }
